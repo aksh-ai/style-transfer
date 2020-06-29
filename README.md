@@ -36,4 +36,6 @@ For pip version 19.1 or above:
 
 Use the [style_transfer.py](style_transfer.py) script to run style transfer with your own images.
 
+Example:
+
 `python style_transfer.py --content 'Images/City.jpg' --style 'Images/StarryNight.jpg' --steps 6000 --size 512 --verbose 300 --save_vid True --output_folder results --output_name starry_bleh`
