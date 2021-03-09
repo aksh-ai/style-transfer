@@ -112,7 +112,7 @@ if __name__ == "__main__":
 			ctr += 1
 
 	image = target
-	img = image * 255
+	img = image.detach().numpy()* 255
 	img = img.astype(np.uint8)
 	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 	cv2.imwrite(os.path.join(OUTPUT_FOLDER, OUTPUT_NAME + '.jpg'), img)
